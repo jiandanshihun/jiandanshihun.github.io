@@ -21,7 +21,7 @@
 0x00看到github上有很多项目都是使用了RxJava的，不太懂，感觉还是姿势不够，需要学习一个～，在网上找了一些别人的Blog学习了一下，然后自己动手写代码消化一下～在这里主要感谢@扔物线的博文和@_SOLID的博文。
 下面直接叙述一下使用RxJava的过程吧，看上去会相对“顺滑”。
 0x01RxJava的核心开发者的">
-<meta property="og:updated_time" content="2016-06-20T06:32:08.246Z">
+<meta property="og:updated_time" content="2016-06-20T07:18:23.448Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="20160620helloworld">
 <meta name="twitter:description" content="RxJava学习手记
@@ -105,47 +105,36 @@
 <hr>
 <h2 id="0x00"><a href="#0x00" class="headerlink" title="0x00"></a>0x00</h2><p>看到github上有很多项目都是使用了RxJava的，不太懂，感觉还是姿势不够，需要学习一个～，在网上找了一些别人的Blog学习了一下，然后自己动手写代码消化一下～在这里主要感谢<a href="http://gank.io/post/560e15be2dca930e00da1083" target="_blank" rel="external">@扔物线的博文</a>和<a href="http://www.jianshu.com/p/8cf84f719188" target="_blank" rel="external">@_SOLID的博文</a>。</p>
 <p>下面直接叙述一下使用RxJava的过程吧，看上去会相对“顺滑”。</p>
-<h2 id="0x01"><a href="#0x01" class="headerlink" title="0x01"></a>0x01</h2><p>RxJava的核心开发者的<a href="https://github.com/ReactiveX" target="_blank" rel="external">github主页</a>里可以找到<a href="https://github.com/ReactiveX/RxJava" target="_blank" rel="external">RxJava</a>和<a href="https://github.com/ReactiveX/RxAndroid&lt;/p" target="_blank" rel="external">RxAndroid</a>的项目。android开发者在使用的时候，可以引入依赖：</p>
+<h2 id="0x01"><a href="#0x01" class="headerlink" title="0x01"></a>0x01</h2><p>RxJava的核心开发者的<a href="https://github.com/ReactiveX" target="_blank" rel="external">github主页</a>里可以找到<a href="https://github.com/ReactiveX/RxJava" target="_blank" rel="external">RxJava</a>和<a href="https://github.com/ReactiveX/RxAndroid" target="_blank" rel="external">RxAndroid</a>的项目。android开发者在使用的时候，可以引入依赖：</p>
 <blockquote>
 <p>compile ‘io.reactivex:rxandroid:1.2.1’<br>compile ‘io.reactivex:rxjava:1.1.6’<br><em>//引用时间：20160617，最新版本</em></p>
 </blockquote>
 <p>RxJava页面对项目的介绍：</p>
 <blockquote>
-<p>RxJava is a Java VM implementation of Reactive Extensions: a library for composing asynchronous and event-based programs by using observable sequences.</p>
+<p>RxJava is a Java VM implementation of Reactive Extensions: a library for composing asynchronous and event-based programs by using observable sequences.’</p>
 <p>It extends the observer pattern to support sequences of data/events and adds operators that allow you to compose sequences together declaratively while abstracting away concerns about things like low-level threading, synchronization, thread-safety and concurrent data structures.</p>
-<p>Zero Dependencies<br>&lt; 1MB Jar<br>Java 6+ &amp; Android 2.3+<br>Java 8 lambda support<br>Polyglot (Scala, Groovy, Clojure and Kotlin)<br>Non-opinionated about source of concurrency (threads, pools, event loops, fibers, actors, etc)<br>Async or synchronous execution<br>Virtual time and schedulers for parameterized concurrency</p>
+<ul>
+<li>Zero Dependencies</li>
+<li>&lt; 1MB Jar</li>
+<li>Java 6+ &amp; Android 2.3+</li>
+<li>Java 8 lambda support</li>
+<li>Non-opinionated about source of concurrency (threads, pools, event loops, fibers, actors, etc)</li>
+<li>Async or synchronous execution</li>
+<li>Virtual time and schedulers for parameterized concurrency</li>
+</ul>
 </blockquote>
 <p>可以看出它是一个基于event的、使用观察者模式的一个<strong>异步</strong>库。使用RxJava进行异步操作的时候代码非常简单易懂</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/20/20160620helloworld/" data-id="cipnnuuwf0000swlkxb8kpq10" class="article-share-link">Partager</a>
+      <a data-url="http://yoursite.com/2016/06/20/20160620helloworld/" data-id="cipnocg7x0000aclkdlb289ry" class="article-share-link">Partager</a>
       
       
     </footer>
   </div>
   
     
-<nav id="article-nav">
-  
-    <a href="/2016/06/20/My-New-Post/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Récent</strong>
-      <div class="article-nav-title">
-        
-          My New Post
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2016/06/20/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Ancien</strong>
-      <div class="article-nav-title">Hello World</div>
-    </a>
-  
-</nav>
-
   
 </article>
 
@@ -178,15 +167,7 @@
       <ul>
         
           <li>
-            <a href="/2016/06/20/My-New-Post/">My New Post</a>
-          </li>
-        
-          <li>
             <a href="/2016/06/20/20160620helloworld/">20160620helloworld</a>
-          </li>
-        
-          <li>
-            <a href="/2016/06/20/hello-world/">Hello World</a>
           </li>
         
       </ul>

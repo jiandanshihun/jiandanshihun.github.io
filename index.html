@@ -64,42 +64,6 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-My-New-Post" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/06/20/My-New-Post/" class="article-date">
-  <time datetime="2016-06-20T06:45:45.000Z" itemprop="datePublished">2016-06-20</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/06/20/My-New-Post/">My New Post</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/20/My-New-Post/" data-id="cipnnuuwk0001swlk3yhuenmk" class="article-share-link">Partager</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
     <article id="ew-20160620helloworld" class="article article-type-ew" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/06/20/20160620helloworld/" class="article-date">
@@ -127,67 +91,30 @@
 <hr>
 <h2 id="0x00"><a href="#0x00" class="headerlink" title="0x00"></a>0x00</h2><p>看到github上有很多项目都是使用了RxJava的，不太懂，感觉还是姿势不够，需要学习一个～，在网上找了一些别人的Blog学习了一下，然后自己动手写代码消化一下～在这里主要感谢<a href="http://gank.io/post/560e15be2dca930e00da1083" target="_blank" rel="external">@扔物线的博文</a>和<a href="http://www.jianshu.com/p/8cf84f719188" target="_blank" rel="external">@_SOLID的博文</a>。</p>
 <p>下面直接叙述一下使用RxJava的过程吧，看上去会相对“顺滑”。</p>
-<h2 id="0x01"><a href="#0x01" class="headerlink" title="0x01"></a>0x01</h2><p>RxJava的核心开发者的<a href="https://github.com/ReactiveX" target="_blank" rel="external">github主页</a>里可以找到<a href="https://github.com/ReactiveX/RxJava" target="_blank" rel="external">RxJava</a>和<a href="https://github.com/ReactiveX/RxAndroid&lt;/p" target="_blank" rel="external">RxAndroid</a>的项目。android开发者在使用的时候，可以引入依赖：</p>
+<h2 id="0x01"><a href="#0x01" class="headerlink" title="0x01"></a>0x01</h2><p>RxJava的核心开发者的<a href="https://github.com/ReactiveX" target="_blank" rel="external">github主页</a>里可以找到<a href="https://github.com/ReactiveX/RxJava" target="_blank" rel="external">RxJava</a>和<a href="https://github.com/ReactiveX/RxAndroid" target="_blank" rel="external">RxAndroid</a>的项目。android开发者在使用的时候，可以引入依赖：</p>
 <blockquote>
 <p>compile ‘io.reactivex:rxandroid:1.2.1’<br>compile ‘io.reactivex:rxjava:1.1.6’<br><em>//引用时间：20160617，最新版本</em></p>
 </blockquote>
 <p>RxJava页面对项目的介绍：</p>
 <blockquote>
-<p>RxJava is a Java VM implementation of Reactive Extensions: a library for composing asynchronous and event-based programs by using observable sequences.</p>
+<p>RxJava is a Java VM implementation of Reactive Extensions: a library for composing asynchronous and event-based programs by using observable sequences.’</p>
 <p>It extends the observer pattern to support sequences of data/events and adds operators that allow you to compose sequences together declaratively while abstracting away concerns about things like low-level threading, synchronization, thread-safety and concurrent data structures.</p>
-<p>Zero Dependencies<br>&lt; 1MB Jar<br>Java 6+ &amp; Android 2.3+<br>Java 8 lambda support<br>Polyglot (Scala, Groovy, Clojure and Kotlin)<br>Non-opinionated about source of concurrency (threads, pools, event loops, fibers, actors, etc)<br>Async or synchronous execution<br>Virtual time and schedulers for parameterized concurrency</p>
+<ul>
+<li>Zero Dependencies</li>
+<li>&lt; 1MB Jar</li>
+<li>Java 6+ &amp; Android 2.3+</li>
+<li>Java 8 lambda support</li>
+<li>Non-opinionated about source of concurrency (threads, pools, event loops, fibers, actors, etc)</li>
+<li>Async or synchronous execution</li>
+<li>Virtual time and schedulers for parameterized concurrency</li>
+</ul>
 </blockquote>
 <p>可以看出它是一个基于event的、使用观察者模式的一个<strong>异步</strong>库。使用RxJava进行异步操作的时候代码非常简单易懂</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/20/20160620helloworld/" data-id="cipnnuuwf0000swlkxb8kpq10" class="article-share-link">Partager</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/06/20/hello-world/" class="article-date">
-  <time datetime="2016-06-20T06:19:18.895Z" itemprop="datePublished">2016-06-20</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/06/20/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/20/hello-world/" data-id="cipnnuuwn0002swlkedkeg3fc" class="article-share-link">Partager</a>
+      <a data-url="http://yoursite.com/2016/06/20/20160620helloworld/" data-id="cipnocg7x0000aclkdlb289ry" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -227,15 +154,7 @@
       <ul>
         
           <li>
-            <a href="/2016/06/20/My-New-Post/">My New Post</a>
-          </li>
-        
-          <li>
             <a href="/2016/06/20/20160620helloworld/">20160620helloworld</a>
-          </li>
-        
-          <li>
-            <a href="/2016/06/20/hello-world/">Hello World</a>
           </li>
         
       </ul>
